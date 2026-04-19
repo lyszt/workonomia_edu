@@ -5,7 +5,10 @@ An economic management simulator built in Java with Swing. You start with zero c
 Progress from grinding manual labor to building a passive income empire by hiring and managing employees. Each worker has their own salary cost and profitability. Scale up, balance the payroll, survive the tax system, and dodge random events (like employees demanding raises) before your balance hits -100 and Jombson wins.
 
 
-https://github.com/user-attachments/assets/4c08f98b-3f53-4523-855d-1acfb338d480
+
+
+https://github.com/user-attachments/assets/7f1382ba-8eaa-4360-aa1b-e5549f3cc0b9
+
 
 
 ## Gameplay
