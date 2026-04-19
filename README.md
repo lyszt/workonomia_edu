@@ -1,12 +1,38 @@
 # Workonomia
 
-Workonomia é um simulador de gerenciamento econômico desenvolvido em Java com a biblioteca Swing, focado na gestão de recursos e otimização de sistemas. O jogador inicia com capital zero e progride de uma fase de geração de renda manual para um modelo de renda passiva, baseado na contratação e gestão de uma equipe de funcionários. Cada funcionário é uma entidade com atributos próprios de custo (salário) e rentabilidade, e o objetivo é escalar a operação equilibrando a folha de pagamento com a receita gerada. A dinâmica é governada por um game loop que processa os ciclos de lucro, 
-aplica um sistema de imposto progressivo e introduz eventos aleatórios, como flutuações de custos, que exigem adaptação estratégica do jogador para evitar a condição de falência por saldo negativo;
+An economic management simulator built in Java with Swing. You start with zero capital and a dead-end gig selling water at a traffic light — under the "mentorship" of Jombson, a corporate buzzword-spewing antagonist who thinks he's disrupting the economy.
 
---- 
+Progress from grinding manual labor to building a passive income empire by hiring and managing employees. Each worker has their own salary cost and profitability. Scale up, balance the payroll, survive the tax system, and dodge random events (like employees demanding raises) before your balance hits -100 and Jombson wins.
 
 
 https://github.com/user-attachments/assets/4c08f98b-3f53-4523-855d-1acfb338d480
 
 
+## Gameplay
 
+- **Work** — click the work button to earn money manually
+- **Hire** — recruit employees once you've built enough capital
+- **Survive** — a game loop fires every 4–5 seconds: employees generate profit, wages get deducted, progressive taxes apply (10% / 25% / 40% based on net income), and random events can spike your costs
+- **Story** — narrative chapters unfold as you hit milestones; Jombson and Pedrinho the Capybara will make appearances
+
+**Lose condition:** balance drops below -R$100 — bankruptcy, Jombson wins.
+
+## Tech Stack
+
+- Java + Swing (NetBeans GUI forms)
+- `ScheduledExecutorService` for the game loop
+- Spring Boot backend (`/backend`) with Spring Security and JPA
+- Audio via `javax.sound.sampled`
+
+## Running
+
+Open in NetBeans and run `src/trabalho/Trabalho.java`, or compile and run from the project root.
+
+Requires Java 11+.
+
+---
+
+## Contributors
+
+- **João Luis Almeida Santos** — [@lyszt](https://github.com/lyszt)
+- **Francinildo Felix Guedes** — [@Felix0w](https://github.com/Felix0w)
